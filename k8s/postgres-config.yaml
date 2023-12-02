@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+data:
+  POSTGRES_HOST: '172.17.0.1'
+  POSTGRES_USER: asa_chef
+  POSTGRES_PASS: asa_pwd
+  POSTGRES_DATABASE: postgres
+  POSTGRES_DRIVERNAME: postgresql+psycopg2
+  POSTGRES_PORT: '5432'
